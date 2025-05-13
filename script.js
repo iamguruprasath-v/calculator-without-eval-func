@@ -441,10 +441,10 @@ function calc() {
         return displayError("Invalid Format");
     }
 
-    console.log("Final Tokens:", tokenization);
+    // console.log("Final Tokens:", tokenization);
 
     let postFixNotation = convertInfixToPostfix(tokenization);
-    console.log(postFixNotation);
+    // console.log(postFixNotation);
 
     let result = calculateResult(postFixNotation);
     display.value = result;
