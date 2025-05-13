@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 80%);
+}
+
+.calculator{
+    display: grid;
+    grid-template-rows: repeat(6, minmax(100px, 2fr));
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 10%);
+    padding: 10px;
+}
+
+.item{
+    border: none;
+    border-radius: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+.display{
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+.equals{
+    grid-row: span 2;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+.number{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 92%);
+}
+
+.operation{
+    background-color: hsl(36, 100%, 52%);
+    color: hsl(0, 0%, 92%);
+}
+
+.special{
+    background-color: hsl(0, 0%, 65%);
+}
+
+.operation:hover{
+    background-color: hsl(36, 100%, 60%);
+}
+
+.operation:active{
+    background-color: hsl(36, 100%, 80%);
+}
+
+.special:hover{
+    background-color: hsl(0, 0%, 73%);
+}
+
+.special:active{
+    background-color: hsl(0, 0%, 93%);
+}
+
+.number:hover{
+    background-color: hsl(0, 0%, 28%);
+}
+
+.number:active{
+    background-color: hsl(0, 0%, 48%);
+}

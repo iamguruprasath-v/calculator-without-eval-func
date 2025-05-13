@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: hsl(0, 0%, 20%)">Happy Calculating..!</h1>
+    <div class="calculator">
+        <input type="text" readonly class="display item" value="" id="display">
+        <button class="item special" onclick="clearDisplay()">C</button>
+        <button class="item operation" onclick="makeLastAsDivisionOperation(event)" value="/">÷</button>
+        <button class="item operation" onclick="makeLastAsMultiplyOperation(event)" value="*">x</button>
+        <button class="item special" onclick="clearOne()">&lt;</button>
+        <button class="item number" onclick="append(event)" value="8">8</button>
+        <button class="item number" onclick="append(event)" value="7">7</button>
+        <button class="item number" onclick="append(event)" value="9">9</button>
+        <button class="item operation" onclick="makeLastAsMinusOperation(event)" value="-">-</button>
+        <button class="item number" onclick="append(event)" value="4">4</button>
+        <button class="item number" onclick="append(event)"value="6">6</button>
+        <button class="item number" onclick="append(event)"value="5">5</button>
+        <button class="item operation" onclick="makeLastAsPlusOperation(event)" value="+">+</button>
+        <button class="item number" onclick="append(event)" value="1">1</button>
+        <button class="item number" onclick="append(event)" value="2">2</button>
+        <button class="item number" onclick="append(event)" value="3">3</button>
+        <button class="item equals operation" onclick="calc()">=</button>
+        <button class="item special" onclick="append(event)" value="(" id="open-paranthesis">(</button>
+        <button class="item number" onclick="append(event)" value="0">0</button>
+        <button class="item special" onclick="append(event)" value=")" id="close-paranthesis">)</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
